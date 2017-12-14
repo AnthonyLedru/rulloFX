@@ -1,0 +1,97 @@
+Button {
+    -fx-background-color : #171a29;
+    -fx-border-color : #df144c;
+	-fx-font-weight: bold;
+    -fx-font-size: 25;
+	-fx-text-fill: #df144c;
+	-fx-alignment: center;
+}
+
+.title {
+    -fx-background-color : #171a29;
+	-fx-font-weight: bold;
+    -fx-font-size: 25;
+	-fx-text-fill: #df144c;
+}
+
+Button:hover {
+    -fx-background-color : #df144c;
+	-fx-text-fill: #171a29;
+}
+
+.board {
+    -fx-background-color : #171a29;
+	-fx-alignment: center;
+}
+
+.pane {
+	-fx-alignment: center;
+}
+
+.sum {
+	-fx-border-color: #444444;
+	-fx-text-fill: white;
+	-fx-alignment: center;
+	-fx-border-insets: 7;
+    -fx-font-size: 20;
+    -fx-pref-height: 50;
+    -fx-pref-width: 50;
+    -fx-min-width: 50;
+    -fx-min-height: 50;
+}
+
+.correct {
+	-fx-border-color: #ffff7f;
+	-fx-text-fill: #ffff7f;
+}
+
+.cell {
+	-fx-alignment: center;
+    -fx-background-insets: 7;
+    -fx-background-radius: 1000;
+    -fx-font-size: 20;
+    -fx-pref-height: 50;
+    -fx-pref-width: 50;
+    -fx-min-width: 50;
+    -fx-min-height: 50;
+}
+
+.active {
+	-fx-text-fill: white;
+	-fx-font-weight: normal;
+    -fx-background-color : #df144c;
+}
+
+.locked {
+	-fx-text-fill: yellow;
+	-fx-font-weight: bold;
+    -fx-background-color : #146f2c;
+}
+
+.active:hover {
+    -fx-background-color : #7f142c;
+}
+
+
+.locked:hover {
+    -fx-background-color : #143f2c;
+}
+
+.inactive {
+	-fx-text-fill: #171a29;
+	-fx-font-weight: normal;
+	-fx-background-color: #444444;
+}
+
+.inactive:hover {
+	-fx-text-fill: #7f142c;
+    -fx-background-color : #444444;
+}
+
+.win {
+	-fx-alignment: center;
+	-fx-font-size: 150;
+	-fx-text-fill:green;
+}
+
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
