@@ -4,4 +4,4 @@ Pour chaque ligne et colonne, il vous faudra obtenir le bon total de points insc
 
 ![alt text](https://github.com/AnthonyLedru/rulloFX/blob/master/game.png)
 
-Ps : Cette version est un peu vieille en date, il s'agit d'un projet de 2ème année de DUT et de nombreux bugs sont présents, je n'ai pas retouché au code depuis !
+Ps : Cette version est un peu vieille en date, il s'agit d'un projet de 2ème année de DUT et de nombreux bugs sont présents, le code est parfois un peu "tiré par les cheveux", je n'y ai pas retouché depuis !
