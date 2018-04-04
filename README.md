@@ -1,6 +1,6 @@
 # RulloFX
-RulloFX est un jeu de calcul mental développé en JAVA. <br>
-Pour chaque ligne et colonne, il vous faudra obtenir le bon total de points inscrit sur les carrés. Pour y parvenir, il vous suffira de supprimer tous les ronds qui ne doivent pas entrer dans le calcul selon vous. Si vous obtenez le bon total dans toutes les lignes et toutes les colonnes, vous avez gagné !
+RulloFX is a mental calculation game developed in JAVA. <br>
+For each row and column, you will need to get the correct amount of points on the squares. To do this, you only need to delete all the circles that should not enter the calculation in your opinion. If you get the right total in all the rows and all the columns, you have won!
 
 ![alt text](https://github.com/AnthonyLedru/rulloFX/blob/master/game.png)
 
