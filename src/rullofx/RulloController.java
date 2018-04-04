@@ -27,10 +27,6 @@ public class RulloController {
 	private BoardView boardView;
 	private Label winLabel;
 
-	/**
-	 * MÃƒÂ©thode invoquÃƒÂ©e automatiquement aprÃƒÂ¨s la crÃƒÂ©ation de l'interface
-	 * graphique associÃƒÂ©e ÃƒÂ  ce contrÃƒÂ´leur.
-	 */
 	public void initialize() {
 		stackPane.getChildren().add(boardView = new BoardView());
 		BoardModel model = new BoardModel();

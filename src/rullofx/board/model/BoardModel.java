@@ -10,7 +10,6 @@ public class BoardModel extends Observable {
 	private BoardDataFactory boardDataFactory;
 
 	public BoardModel() {
-		//this.boardDataFactory = new DefaultBoardDataFactory();
 		this.boardDataFactory = new SampleBoardDataFactory();
 	}
 
@@ -65,23 +64,12 @@ public class BoardModel extends Observable {
 		return res;
 	}
 
-	/**
-	 * Démarre une nouvelle partie.
-	 */
 	public void startGame() {
 		data = boardDataFactory.createBoardData();
-
-		// marque le modèle comme ayant changé
 		this.setChanged();
-
-		// émission d'un événement à destination des observateurs du modèle
 		this.notifyObservers(new BoardModelEvent(BoardModelEvent.EventType.START_EVENT));
 	}
 
-	/**
-	 * Réinitialise le plateau (sans changer les données). Les cellules sont
-	 * toutes activées et dévérouillées.
-	 */
 	public void reset() {
 		for (int i = 0; i < data.getRowCount() ; i++) {
 			for (int j = 0; j < data.getColumnCount(); j++) {
@@ -98,17 +86,6 @@ public class BoardModel extends Observable {
 		
 	}
 
-	/**
-	 * Inverse l'état d'activation d'une cellule. Si la cellule est verrouillée,
-	 * l'état ne sera pas modifié. Si l'état de la cellule est modifié, les
-	 * sommes de la ligne et de la colonne auxquelles appartient la cellule sont
-	 * mises à jour.
-	 * 
-	 * @param row
-	 *            ligne de la cellule
-	 * @param column
-	 *            colonne de la cellule
-	 */
 	public void toggleActiveState(int row, int column) {
 		if (!data.getCell(row, column).isLocked()) {
 			data.getCell(row, column).setActive(!data.getCell(row, column).isActive());
@@ -131,15 +108,6 @@ public class BoardModel extends Observable {
 		}
 	}
 
-	/**
-	 * Inverse l'état de verrouillage d'une cellule. Si la cellule est
-	 * désactivée, l'état ne sera pas modifié.
-	 * 
-	 * @param row
-	 *            ligne de la cellule
-	 * @param column
-	 *            colonne de la cellule
-	 */
 	public void toggleLockedState(int row, int column) {
 		if (data.getCell(row, column).isActive()) {
 			data.getCell(row, column).setLocked(!data.getCell(row, column).isLocked());

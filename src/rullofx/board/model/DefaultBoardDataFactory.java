@@ -44,7 +44,6 @@ public class DefaultBoardDataFactory implements BoardDataFactory {
 		int sumLine=0;
 		int sumCol=0;
 		int valeurCell = 0;
-		//BON -> initialise les cellules
 		for(int i = 0; i<nbLigne; i++){
 			for(int j = 0; j<nbCol; j++){;
 			valeurCell = rand.nextInt((inter.max - inter.min)+1)+inter.min;

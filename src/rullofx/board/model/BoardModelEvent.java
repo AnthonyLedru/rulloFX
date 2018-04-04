@@ -26,7 +26,4 @@ public class BoardModelEvent {
 	public String toString() {
 		return "BoardModelEvent [row=" + this.row + ", column=" + this.column + "]";
 	}
-	
-	
-
 }

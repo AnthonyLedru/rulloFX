@@ -9,10 +9,6 @@ public class Sum {
 	public Sum(int target, Array<Cell> cells) {
 		this.cells = cells;
 		this.target = target;
-		/*for (int i = 0; i < cells.size(); i++) {
-System.out.println("  "+i);
-			this.current += cells.get(i).getValue();
-		}*/
 		this.update();
 	}
 
@@ -32,20 +28,10 @@ System.out.println("  "+i);
 		this.current = current;
 	}
 
-	/**
-	 * Indique si la valeur courante est égale à la valeur à atteindre
-	 * 
-	 * @return vrai si la valeur courante est égale à la valeur à atteindre,
-	 *         faux sinon
-	 */
 	public boolean isTargetReached() {
 		return this.current == this.target;
 	}
 
-	/**
-	 * Met à jour la somme courante, en ne tenant compte que des cellules
-	 * actives.
-	 */
 	public void update() {
 		int sum = 0;
 		for (int i = 0; i < this.cells.size(); i++) {

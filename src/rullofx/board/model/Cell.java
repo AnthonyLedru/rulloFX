@@ -34,12 +34,6 @@ public class Cell {
 		this.locked = locked;
 	}
 
-	/**
-	 * Inverse l'état d'activation de la cellule. Si la cellule est verrouillée,
-	 * l'état ne sera pas modifié.
-	 * 
-	 * @return vrai si l'état a été modifié, faux sinon
-	 */
 	public boolean toggleActiveState() {
 		boolean res = false;
 		if (!this.locked) {
@@ -53,12 +47,6 @@ public class Cell {
 	return res;
 	}
 
-	/**
-	 * Inverse l'état de verrouillage de la cellule. Si la cellule est
-	 * désactivée, l'état ne sera pas modifié.
-	 * 
-	 * @return vrai si l'état a été modifié, faux sinon
-	 */
 	public boolean toggleLockedState() {
 		boolean res = false;
 		if (this.active) {
