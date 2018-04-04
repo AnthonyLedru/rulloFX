@@ -5,3 +5,6 @@ For each row and column, you will need to get the correct amount of points on th
 ## Screenshot
 
 ![alt text](https://github.com/AnthonyLedru/rulloFX/blob/master/game.png)
+
+## Requirement
+- JavaFX
