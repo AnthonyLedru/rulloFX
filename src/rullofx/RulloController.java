@@ -38,7 +38,6 @@ public class RulloController {
 		this.boardView.getModel().addObserver(new Observer() {
 			@Override
 			public void update(Observable o, Object arg) {
-				System.out.println(arg);
 				BoardModelEvent monEvent = ((BoardModelEvent) arg);
 				BoardModelEvent.EventType type = monEvent.eventType;
 				nouveau.setOnAction(new EventHandler<ActionEvent>() {
